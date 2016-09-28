@@ -1,0 +1,19 @@
+{
+  "name": "fifa-scores",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tim Holmes",
+  "license": "ISC",
+  "dependencies": {
+    "good": "^7.0.1",
+    "good-console": "^6.1.2",
+    "good-squeeze": "^4.0.0",
+    "hapi": "^14.2.0",
+    "joi": "^9.0.4"
+  }
+}
