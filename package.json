@@ -14,6 +14,7 @@
     "good-console": "^6.1.2",
     "good-squeeze": "^4.0.0",
     "hapi": "^14.2.0",
+    "bluebird": "^3.0",
     "joi": "^9.0.4"
   }
 }
