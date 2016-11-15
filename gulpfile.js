@@ -4,7 +4,7 @@ var Promise = require('es6-promise').Promise,
     babel = require('gulp-babel'),
     gulp = require('gulp'),
     sass = require('gulp-sass'),
-    useref = require('gulp-useref'),
+    build = require('gulp-useref'),
     uglify = require('gulp-uglify'),
     gulpIf = require('gulp-if'),
     cssnano = require('gulp-cssnano'),
@@ -21,28 +21,29 @@ gulp.task('sass', () => {
 });
 
 gulp.task('transpile', () => {
-    return gulp.src('lib/ui/src/scripts/es6/app.js')
+    return gulp.src('lib/ui/src/scripts/es6/**/*.js')
         .pipe(babel({
             presets: ['es2015']
         }))
         .pipe(gulp.dest('lib/ui/src/scripts/es5'));
 });
 
-gulp.task('watch', () => {
-    gulp.watch('lib/ui/src/style/scss/**/*.scss', ['sass']);
-    gulp.watch('lib/ui/src/scripts/es6/app.js', ['transpile']);
+gulp.task('watch', (callback) => {
+    gulp.watch('lib/ui/src/style/scss/**/*.scss', ['sass', 'clean:dist', 'build']);
+    gulp.watch('lib/ui/src/scripts/es6/**/*.js', ['transpile', 'clean:dist', 'build']);
+    gulp.watch('lib/ui/src/index.html', ['clean:dist', 'build']);
 });
 
-gulp.task('useref', () => {
-    return gulp.src('src/index.html')
-        .pipe(useref())
+gulp.task('build', () => {
+    return gulp.src('lib/ui/src/index.html')
+        .pipe(build())
         .pipe(gulpIf('*.js', uglify({mangle: false})))
         .pipe(gulpIf('*.css', cssnano()))
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest('lib/ui/dist'));
 });
 
 gulp.task('clean:dist', () =>  {
-    return del.sync('dist');
+    return del.sync('lib/ui/dist');
 });
 
 gulp.task('lint', () =>  {
@@ -51,19 +52,8 @@ gulp.task('lint', () =>  {
         .pipe(jshint.reporter('fail'));
 });
 
-gulp.task('build', (callback) => {
-    runSequence('clean:dist',
-        'sass',
-        // 'useref',
-        'move-components',
-        'move-templates',
-        callback
-    );
-});
-
-
 gulp.task('default', (callback) => {
-    runSequence(['sass', 'transpile', 'watch'],
+    runSequence(['sass', 'transpile'], 'clean:dist', 'build', 'watch',
         callback
     );
 });

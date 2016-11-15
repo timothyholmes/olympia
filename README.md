@@ -1,8 +1,8 @@
 # Greenwood Olympia
 
-Score tracking app for some group games
+Score tracking app for some group games.
 
-## Running
+## Running the server
 
 Run on dev data:
 
@@ -16,7 +16,26 @@ Run on prod data:
 MONGO_DEV="-prod" npm start
 ```
 
-## Mongo
+## Running the UI
+
+This process transcompiles the es6 and sass into es5 and css. They are then minified and moved into the ```ui/dist/``` folder. This is what is served by the server.
+
+Server must be running concurrently. Start the server in one terminal tab, run gulp in another.
+
+```shell
+gulp
+```
+
+Navigate to: ```localhost:3000/```
+
+Note: Gulp will need to be installed globally
+
+```shell
+npm install gulp -g
+```
+
+
+## Mongo Notes
 
 Connection url is set by:
 

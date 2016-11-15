@@ -2,3 +2,4 @@ node_modules/*
 npm-debug.log
 lib/ui/src/style/css
 lib/ui/src/scripts/es5
+lib/ui/dist/
