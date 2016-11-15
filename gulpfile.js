@@ -4,7 +4,7 @@ var Promise = require('es6-promise').Promise,
     babel = require('gulp-babel'),
     gulp = require('gulp'),
     sass = require('gulp-sass'),
-    build = require('gulp-useref'),
+    useref = require('gulp-useref'),
     uglify = require('gulp-uglify'),
     gulpIf = require('gulp-if'),
     cssnano = require('gulp-cssnano'),
@@ -15,7 +15,7 @@ var Promise = require('es6-promise').Promise,
     jshint = require('gulp-jshint');
 
 gulp.task('sass', () => {
-    return gulp.src('lib/ui/src/style/scss/main.scss')
+    return gulp.src('lib/ui/src/style/scss/**/*.scss')
         .pipe(sass())
         .pipe(gulp.dest('lib/ui/src/style/css'));
 });
@@ -29,20 +29,25 @@ gulp.task('transpile', () => {
 });
 
 gulp.task('watch', (callback) => {
-    gulp.watch('lib/ui/src/style/scss/**/*.scss', ['sass', 'clean:dist', 'build']);
-    gulp.watch('lib/ui/src/scripts/es6/**/*.js', ['transpile', 'clean:dist', 'build']);
-    gulp.watch('lib/ui/src/index.html', ['clean:dist', 'build']);
+    gulp.watch('lib/ui/src/style/scss/main.scss', ['sass']
+        // runSequence('sass', 'transpile', 'clean', 'useref', 'watch',
+        //     callback
+        // )
+    );
+    gulp.watch('lib/ui/src/style/css/main.css', ['clean', 'useref']);
+    gulp.watch('lib/ui/src/scripts/es6/**/*.js', ['transpile', 'clean', 'useref']);
+    gulp.watch('lib/ui/src/index.html', ['clean', 'useref']);
 });
 
-gulp.task('build', () => {
+gulp.task('useref', () => {
     return gulp.src('lib/ui/src/index.html')
-        .pipe(build())
+        .pipe(useref())
         .pipe(gulpIf('*.js', uglify({mangle: false})))
         .pipe(gulpIf('*.css', cssnano()))
         .pipe(gulp.dest('lib/ui/dist'));
 });
 
-gulp.task('clean:dist', () =>  {
+gulp.task('clean', () =>  {
     return del.sync('lib/ui/dist');
 });
 
@@ -53,7 +58,7 @@ gulp.task('lint', () =>  {
 });
 
 gulp.task('default', (callback) => {
-    runSequence(['sass', 'transpile'], 'clean:dist', 'build', 'watch',
+    runSequence('sass', 'transpile', 'clean', 'useref', 'watch',
         callback
     );
 });
