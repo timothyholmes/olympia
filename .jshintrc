@@ -17,6 +17,6 @@
   "sub": true,
   "esversion": 6,
   "globals": {
-
+      "Vue": true
   }
 }
