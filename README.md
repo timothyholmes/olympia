@@ -13,7 +13,7 @@ npm start
 Run on prod data:
 
 ```shell
-MONGO_DEV="-prod" npm start
+npm run prod
 ```
 
 ## Running the UI
