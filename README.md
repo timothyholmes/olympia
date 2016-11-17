@@ -2,40 +2,35 @@
 
 Score tracking app for some group games.
 
-## Running the server
+## Build and Run
 
-Run on dev data:
+```shell
+npm run deploy
+```
 
+### Dev scripts
+
+Connect to Mongo dev data
 ```shell
 npm start
 ```
 
-Run on prod data:
-
+Connect to Mongo prod data
 ```shell
 npm run prod
 ```
 
-## Running the UI
-
-This process transcompiles the es6 and sass into es5 and css. They are then minified and moved into the ```ui/dist/``` folder. This is what is served by the server.
-
-Server must be running concurrently. Start the server in one terminal tab, run gulp in another.
-
+Watch JS changes
 ```shell
-gulp
+npm run watch-js
 ```
 
-Navigate to: ```localhost:3000/```
-
-Note: Gulp will need to be installed globally
-
+Watch SCSS changes
 ```shell
-npm install gulp -g
+npm run watch-scss
 ```
 
-
-## Mongo Notes
+### Mongo Notes
 
 Connection url is set by:
 
@@ -58,3 +53,8 @@ OR
 ```shell
 MONGO_DEV="-prod"
 ```
+
+### Reference Articles
+
+[event handling](https://vuejs.org/v2/guide/events.html)
+[http request](https://auth0.com/blog/build-an-app-with-vuejs/)

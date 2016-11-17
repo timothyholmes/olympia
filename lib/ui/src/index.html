@@ -5,19 +5,45 @@
         <title>Static Content</title>
 
         <link href="ui/src/style/css/main.css" rel="stylesheet">
+        <link href="bootstrap.css" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <h1 id="header" class="title-text">
-                {{ title }}
-            </h1>
+        <div class="container">
+            <header>
+                <h1 id="header" class="title-text">
+                    {{ title }}
+                </h1>
 
-            <div id="app" class="message">
-                {{ message }}
-            </div>
-        </header>
+                <nav id="nav-bar" class="nav-bar">
+                    <button
+                        v-on:click="setActiveState('home')"
+                        class="col-xs-2 btn btn-success">
+                        Home
+                    </button>
+                    <button
+                        v-on:click="setActiveState('profiles')"
+                        class="col-xs-2 btn btn-success">
+                        Profiles
+                    </button>
+                    <button
+                        v-on:click="setActiveState('matches')"
+                        class="col-xs-2 btn btn-success">
+                        Matches
+                    </button>
+                    <button
+                        v-on:click="setActiveState('forms')"
+                        class="col-xs-2 btn btn-success">
+                        Forms
+                    </button>
+                    {{ activeState }}
+                </nav>
+            </header>
 
-        <section></section>
+            <section>
+
+            </section>
+
+        </div>
 
         <script type="text/javascript" src="vue.js"></script>
 

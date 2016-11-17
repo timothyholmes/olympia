@@ -4,13 +4,11 @@ body {
 
 .title-text {
     font-weight: 900;
-    text-align: left;
+    text-align: center;
 }
 
-.message {
-    text-align: left;
-}
-
-.test {
-    color: white;
+.nav-bar {
+    .btn {
+        margin-left: 8px;
+    }
 }

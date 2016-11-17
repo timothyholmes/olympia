@@ -6,11 +6,13 @@
   "scripts": {
     "start": "MONGO_DEV=\"-dev\" node .",
     "prod": "MONGO_DEV=\"-prod\" npm start",
+    "build": "npm run build-js && npm run build-sass",
     "build-js": "babel lib/ui/src/scripts/es6 --presets babel-preset-es2015 --out-dir lib/ui/src/scripts/es5",
     "build-sass": "node-sass --output-style nested lib/ui/src/style/scss/main.scss lib/ui/src/style/css/main.css",
     "watch-sass": "nodemon -e scss -w lib/ui/src/style/scss -x 'npm run build-sass'",
     "watch-js": "nodemon -e js -w lib/ui/src/scripts/es6 -x 'npm run build-js'",
     "clean": "rm -r lib/ui/dist",
+    "deploy": "npm run build && npm start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Tim Holmes",
@@ -29,6 +31,7 @@
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-preset-es2015": "^6.18.0",
+    "bootstrap": "^3.3.7",
     "del": "^2.2.0",
     "jshint": "^2.9.3",
     "node-sass": "^3.13.0",
