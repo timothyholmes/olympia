@@ -7,7 +7,9 @@
     "start": "MONGO_DEV=\"-dev\" node .",
     "prod": "MONGO_DEV=\"-prod\" npm start",
     "build-js": "babel lib/ui/src/scripts/es6 --presets babel-preset-es2015 --out-dir lib/ui/src/scripts/es5",
-    "build-sass": "node-sass --output-style compressed lib/ui/src/style/scss/main.scss lib/ui/dist/main.min.css",
+    "build-sass": "node-sass --output-style nested lib/ui/src/style/scss/main.scss lib/ui/src/style/css/main.css",
+    "watch-sass": "nodemon -e scss -w lib/ui/src/style/scss -x 'npm run build-sass'",
+    "watch-js": "nodemon -e js -w lib/ui/src/scripts/es6 -x 'npm run build-js'",
     "clean": "rm -r lib/ui/dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -30,6 +32,7 @@
     "del": "^2.2.0",
     "jshint": "^2.9.3",
     "node-sass": "^3.13.0",
+    "nodemon": "^1.11.0",
     "run-sequence": "^1.1.5"
   }
 }
