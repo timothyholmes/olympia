@@ -56,5 +56,5 @@ MONGO_DEV="-prod"
 
 ### Reference Articles
 
-[event handling](https://vuejs.org/v2/guide/events.html)
-[http request](https://auth0.com/blog/build-an-app-with-vuejs/)
++ [event handling](https://vuejs.org/v2/guide/events.html)
++ [http request](https://auth0.com/blog/build-an-app-with-vuejs/)
