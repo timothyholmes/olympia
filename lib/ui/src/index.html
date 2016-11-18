@@ -2,19 +2,19 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Static Content</title>
+        <title>Greenwood Olympia</title>
 
         <link href="ui/src/style/css/main.css" rel="stylesheet">
         <link href="bootstrap.css" rel="stylesheet">
     </head>
     <body>
-        <div class="container">
+        <div id="app" class="container">
             <header>
-                <h1 id="header" class="title-text">
+                <h1 class="title-text">
                     {{ title }}
                 </h1>
 
-                <nav id="nav-bar" class="nav-bar">
+                <nav class="nav-bar">
                     <button
                         v-on:click="setActiveState('home')"
                         class="col-xs-2 btn btn-success">
