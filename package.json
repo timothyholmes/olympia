@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "MONGO_DEV=\"-dev\" node .",
-    "prod": "MONGO_DEV=\"-prod\" npm start",
+    "start": "MONGO_URL=\"mongodb://localhost:27017/\" MONGO_DEV=\"-dev\" node .",
+    "custom-start": "MONGO_DEV=\"-dev\" node .",
+    "prod": "MONGO_URL=\"mongodb://localhost:27017/\" MONGO_DEV=\"-prod\" npm start",
     "build": "npm run build-js && npm run build-sass",
     "build-js": "babel lib/ui/src/scripts/es6 --presets babel-preset-es2015 --out-dir lib/ui/src/scripts/es5",
     "build-sass": "node-sass --output-style nested lib/ui/src/style/scss/main.scss lib/ui/src/style/css/main.css",
