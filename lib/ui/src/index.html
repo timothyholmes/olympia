@@ -14,19 +14,19 @@
                     {{ title }}
                 </h1>
 
-                <nav class="nav-bar">
+                <nav class="nav-bar row">
                     <button
                         v-for="view in views"
                         v-on:click="setActiveView(view)"
-                        v-bind:class="{ active: activeView === view }"
-                        class="col-xs-2 btn btn-success">
+                        v-bind:class="{ selected: activeView === view }"
+                        class="col-xs-2 btn">
                         {{ view.title }}
                     </button>
                 </nav>
             </header>
 
             <section>
-
+                {{ activeView.content }}
             </section>
 
         </div>

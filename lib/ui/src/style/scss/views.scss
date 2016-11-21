@@ -8,11 +8,22 @@ body {
 }
 
 .nav-bar {
+    margin: 0 auto;
     .btn {
+        background-color: $accent;
+        color: $light-text;
         margin-left: 8px;
-    }
+        height: 65px;
 
-    .btn.active {
-        background-color: $light-button;
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: darken($accent, 15%);
+            color: $light-text;
+        }
+
+        &:focus {
+
+        }
     }
 }
