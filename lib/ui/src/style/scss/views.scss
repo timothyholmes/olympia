@@ -11,4 +11,8 @@ body {
     .btn {
         margin-left: 8px;
     }
+
+    .btn.active {
+        background-color: $light-button;
+    }
 }
