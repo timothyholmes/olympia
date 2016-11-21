@@ -16,11 +16,11 @@
 
                 <nav class="nav-bar">
                     <button
-                        v-for="state in states"
-                        v-on:click="setActiveState(state)"
-                        v-bind:class="{ active: activeState === state }"
+                        v-for="view in views"
+                        v-on:click="setActiveView(view)"
+                        v-bind:class="{ active: activeView === view }"
                         class="col-xs-2 btn btn-success">
-                        {{ state.title }}
+                        {{ view.title }}
                     </button>
                 </nav>
             </header>
