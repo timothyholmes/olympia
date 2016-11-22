@@ -59,3 +59,4 @@ MONGO_DEV="-prod"
 + [event handling](https://vuejs.org/v2/guide/events.html)
 + [http request](https://auth0.com/blog/build-an-app-with-vuejs/)
 + [vue guide](https://vuejs.org/v2/guide/)
++ [vue gists](https://gist.github.com/yyx990803)
