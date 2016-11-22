@@ -19,10 +19,21 @@
                         v-for="view in views"
                         v-on:click="setActiveView(view)"
                         v-bind:class="{ selected: activeView === view }"
-                        class="col-xs-2 btn">
+                        class="btn">
                         {{ view.title }}
                     </button>
                 </nav>
+
+                <hr class="row divider">
+
+                <h2>
+                    {{ activeView.title }}
+                </h2>
+                <h3>
+                    <small>
+                        {{ activeView.content }}
+                    </small>
+                </h3>
             </header>
 
             <section>
