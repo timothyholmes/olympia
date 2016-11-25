@@ -21,7 +21,7 @@
                 <nav class="nav-bar row">
                     <button
                         v-for="view in views"
-                        v-on:click="setActiveView(view)"
+                        v-on:click="activeView = view"
                         v-bind:class="{ selected: activeView === view }"
                         class="btn">
                         {{ view.title }}
@@ -30,14 +30,25 @@
 
                 <hr class="row divider">
 
-                <h2>
-                    {{ activeView.title }}
-                </h2>
-                <h3>
-                    <small>
+                <div v-show="activeView.title !== 'Welcome'">
+                    <h2>
+                        {{ activeView.title }}
+                    </h2>
+                    <h3>
+                        <small>
+                            {{ activeView.content }}
+                        </small>
+                    </h3>
+                </div>
+
+                <div v-show="activeView.title === 'Welcome'">
+                    <h2 class="welcome">
+                        {{ activeView.title }}
+                    </h2>
+                    <h3 class="welcome-subtext">
                         {{ activeView.content }}
-                    </small>
-                </h3>
+                    </h3>
+                </div>
             </header>
 
             <section>

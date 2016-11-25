@@ -19,9 +19,14 @@
             background-color: darken($accent, 15%);
             color: $light-text;
         }
-
-        &:focus {
-
-        }
     }
+}
+
+.welcome {
+    text-align: center;
+}
+
+.welcome-subtext {
+    color: darken($light-text, 50%);
+    text-align: center;
 }
