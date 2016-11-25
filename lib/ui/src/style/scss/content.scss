@@ -1,0 +1,13 @@
+.match-results {
+    .table-group {
+        border: 0.5px solid $accent;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    thead {
+        background-color: $accent;
+        color: $light-text;
+    }
+}

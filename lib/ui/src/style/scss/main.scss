@@ -3,4 +3,9 @@
 $accent: #10C87D;
 $light-text: #FFFFFF;
 
-@import "./views";
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+@import "./nav";
+@import "./content";
