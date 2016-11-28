@@ -10,12 +10,12 @@ npm run deploy
 
 ### Dev scripts
 
-Connect to Mongo dev data
+Server + Mongo dev data
 ```shell
 npm start
 ```
 
-Connect to Mongo prod data
+Server + Mongo prod data
 ```shell
 npm run prod
 ```
@@ -28,6 +28,11 @@ npm run watch-js
 Watch SCSS changes
 ```shell
 npm run watch-scss
+```
+
+Add mock data to database (server must be running concurrently)
+```shell
+npm run prepop-data
 ```
 
 ### Mongo Notes
