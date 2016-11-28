@@ -87,17 +87,17 @@ module.exports = [
     {
         uri: 'ssb/melee/matchResults',
         payload: {
-            duration: '09:56',
-            level: 'Hyrule',
+            duration: '07:54',
+            level: 'Corneria',
             players: [
                 {
                     name: 'Corey',
                     kills: 5,
                     falls: 2,
                     sds: 1,
-                    character: 'Link',
-                    damageGiven: 654,
-                    damageTaken: 456,
+                    character: 'Mewtwo',
+                    damageGiven: 345,
+                    damageTaken: 743,
                     victim: 'Tony',
                     bully: 'Tony',
                     sober: false
@@ -108,8 +108,8 @@ module.exports = [
                     falls: 5,
                     sds: 0,
                     character: 'Kirby',
-                    damageGiven: 456,
-                    damageTaken: 654,
+                    damageGiven: 876,
+                    damageTaken: 567,
                     victim: 'Tony',
                     bully: 'Tony',
                     sober: true
@@ -120,15 +120,15 @@ module.exports = [
     {
         uri: 'ssb/og/matchResults',
         payload: {
-            duration: '09:56',
-            level: 'Hyrule',
+            duration: '05:35',
+            level: 'Sector Z',
             players: [
                 {
                     name: 'Corey',
                     kills: 5,
-                    falls: 2,
-                    sds: 1,
-                    character: 'Link',
+                    falls: 4,
+                    sds: 0,
+                    character: 'Ness',
                     damageGiven: 654,
                     damageTaken: 456,
                     victim: 'Tony',
@@ -137,7 +137,7 @@ module.exports = [
                 },
                 {
                     name: 'Tony',
-                    kills: 1,
+                    kills: 4,
                     falls: 5,
                     sds: 0,
                     character: 'Kirby',
