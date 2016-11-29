@@ -36,15 +36,15 @@ module.exports = [
             players: [
                 {
                     name: 'Corey',
-                    goalsFor: 56,
-                    goalsAgainst: 0,
+                    goalsFor: 3,
+                    goalsAgainst: 2,
                     team: 'Chelsea',
                     sober: true
                 },
                 {
                     name: 'Tony',
-                    goalsFor: 0,
-                    goalsAgainst: 56,
+                    goalsFor: 2,
+                    goalsAgainst: 3,
                     team: 'DC United',
                     sober: false
                 }
