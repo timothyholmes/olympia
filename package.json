@@ -6,6 +6,7 @@
   "scripts": {
     "start": "MONGO_URL=\"mongodb://localhost:27017/\" MONGO_DEV=\"-dev\" node .",
     "custom-start": "MONGO_DEV=\"-dev\" node .",
+    "prepop-data": "SERVER_URL=\"http://localhost:8000/\" node util/prepopData.js",
     "prod": "MONGO_URL=\"mongodb://localhost:27017/\" MONGO_DEV=\"-prod\" node .",
     "build": "npm run build-js && npm run build-sass",
     "build-js": "babel lib/ui/src/scripts/es6 --presets babel-preset-es2015 --out-dir lib/ui/src/scripts/es5",
