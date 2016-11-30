@@ -1,14 +1,23 @@
 'use strict';
 
-const Wreck = require('wreck'),
-    PrepopData = require('./data'),
-    Bluebird = require('bluebird');
+const PrepopData = require('./data'),
+    Bluebird = require('bluebird'),
+    Wreck = Bluebird.promisifyAll(require('wreck'));
 
-Bluebird.map(PrepopData, (dataEntry) => {
-    Wreck.post(process.env.SERVER_URL + dataEntry.uri, { payload: dataEntry.payload }, (err, res, payload) => {
-        if (err) {
-            console.log('error! ', err);
-        }
-        console.log('Successfully Added: ', dataEntry);
+function loopEm (array) {
+    return Bluebird.each(array, (dataEntry) => {
+        console.log('dataEntry', dataEntry);
+        return Wreck.postAsync(
+            process.env.SERVER_URL + dataEntry.uri,
+            { payload: dataEntry.payload }
+        )
+        .then((resp) => {
+            console.log('yay');
+        })
+        .catch((err) => {
+            console.log('shucks');
+        });
     });
-});
+}
+
+loopEm(PrepopData);
