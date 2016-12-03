@@ -52,6 +52,7 @@
             </header>
 
             <section>
+                <player-info class="player-info" v-show="activeView.title === 'Profiles'"></player-info>
                 <match-results class="match-results" v-show="activeView.title === 'Matches'"></match-results>
             </section>
 
@@ -62,5 +63,6 @@
 
         <script type="text/javascript" src="ui/src/scripts/es5/main.js"></script>
         <script type="text/javascript" src="ui/src/scripts/es5/matchResults.js"></script>
+        <script type="text/javascript" src="ui/src/scripts/es5/playerInfo.js"></script>
     </body>
 </html>
