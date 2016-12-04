@@ -22,12 +22,10 @@ module.exports = [
     {
         uri: 'houseRecord',
         payload: {
-            payload: {
-                player: 'Corey',
-                game: 'Fifa \'16',
-                recordName: 'Biggest Horse',
-                recordValue: '900 lbs'
-            }
+            player: 'Corey',
+            game: 'Fifa \'16',
+            recordName: 'Biggest Horse',
+            recordValue: '900 lbs'
         },
     },
     {
