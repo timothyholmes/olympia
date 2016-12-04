@@ -38,6 +38,27 @@ module.exports = [
         },
     },
     {
+        uri: 'fifa/matchResults',
+        payload: {
+            players: [
+                {
+                    name: 'Tony',
+                    goalsFor: 1,
+                    goalsAgainst: 2,
+                    team: 'Chelsea',
+                    sober: false
+                },
+                {
+                    name: 'Andrew',
+                    goalsFor: 2,
+                    goalsAgainst: 1,
+                    team: 'Brazil',
+                    sober: false
+                }
+            ]
+        }
+    },
+    {
         uri: 'ssb/brawl/matchResults',
         payload: {
             duration: '07:42',

@@ -2,5 +2,22 @@
     .player-card {
         width: 100%;
         background-color: $accent;
+        color: $white;
+
+        border: 5px solid $darkGrey;
+        margin-bottom: 25px;
+
+        .heading {
+
+        }
+
+        .avi {
+            border-radius: 150px;
+            width: 100px;
+            height: 100px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border: 5px solid $white;
+        }
     }
 }
