@@ -38,6 +38,17 @@ module.exports = [
         },
     },
     {
+        uri: 'houseRecord',
+        payload: {
+            payload: {
+                player: 'Andrew',
+                game: 'SSB Brawl',
+                recordName: 'Grenade Christ',
+                recordValue: 'Crazy save of Tim on Hyrule'
+            }
+        },
+    },
+    {
         uri: 'fifa/matchResults',
         payload: {
             players: [
@@ -122,6 +133,246 @@ module.exports = [
                     damageTaken: 645,
                     victim: 'Andrew',
                     bully: 'Andrew',
+                    sober: false
+                }
+            ]
+        }
+    },
+    {
+        uri: 'ssb/brawl/matchResults',
+        payload: {
+            duration: '09:04',
+            level: 'Hyrule',
+            players: [
+                {
+                    name: 'Matt',
+                    kills: 3,
+                    falls: 5,
+                    sds: 0,
+                    position: 2,
+                    character: 'Random',
+                    damageGiven: 774,
+                    damageTaken: 1119,
+                    victim: 'Tim',
+                    bully: 'Andrew',
+                    sober: true
+                },
+                {
+                    name: 'Andrew',
+                    kills: 7,
+                    falls: 4,
+                    sds: 0,
+                    position: 4,
+                    character: 'Snake',
+                    damageGiven: 1356,
+                    damageTaken: 1051,
+                    victim: 'Matt',
+                    bully: 'Tim',
+                    sober: false
+                },
+                {
+                    name: 'Tim',
+                    kills: 4,
+                    falls: 5,
+                    sds: 0,
+                    position: 3,
+                    character: 'Random',
+                    damageGiven: 1233,
+                    damageTaken: 1222,
+                    victim: 'Andrew',
+                    bully: 'Andrew',
+                    sober: false
+                }
+            ]
+        }
+    },
+    {
+        uri: 'ssb/brawl/matchResults',
+        payload: {
+            duration: '04:11',
+            level: 'Corneria',
+            players: [
+                {
+                    name: 'Matt',
+                    kills: 5,
+                    falls: 5,
+                    sds: 0,
+                    position: 2,
+                    character: 'Wolf',
+                    damageGiven: 657,
+                    damageTaken: 671,
+                    victim: 'Andrew',
+                    bully: 'Andrew',
+                    sober: true
+                },
+                {
+                    name: 'Andrew',
+                    kills: 8,
+                    falls: 4,
+                    sds: 0,
+                    position: 4,
+                    character: 'Snake',
+                    damageGiven: 634,
+                    damageTaken: 676,
+                    victim: 'Tim',
+                    bully: 'Matt',
+                    sober: false
+                },
+                {
+                    name: 'Tim',
+                    kills: 1,
+                    falls: 5,
+                    sds: 0,
+                    position: 3,
+                    character: 'Random',
+                    damageGiven: 604,
+                    damageTaken: 602,
+                    victim: 'Matt',
+                    bully: 'Andrew',
+                    sober: false
+                }
+            ]
+        }
+    },
+    {
+        uri: 'ssb/brawl/matchResults',
+        payload: {
+            duration: '09:50',
+            level: 'Hyrule',
+            players: [
+                {
+                    name: 'Matt',
+                    kills: 6,
+                    falls: 3,
+                    sds: 0,
+                    position: 4,
+                    character: 'Pikachu',
+                    damageGiven: 1034,
+                    damageTaken: 773,
+                    victim: 'Tim',
+                    bully: 'Andrew',
+                    sober: true
+                },
+                {
+                    name: 'Andrew',
+                    kills: 4,
+                    falls: 5,
+                    sds: 0,
+                    position: 2,
+                    character: 'Snake',
+                    damageGiven: 576,
+                    damageTaken: 828,
+                    victim: 'Tim',
+                    bully: 'Matt',
+                    sober: false
+                },
+                {
+                    name: 'Tim',
+                    kills: 3,
+                    falls: 5,
+                    sds: 0,
+                    position: 3,
+                    character: 'Lucas',
+                    damageGiven: 1033,
+                    damageTaken: 1070,
+                    victim: 'Andrew',
+                    bully: 'Matt',
+                    sober: false
+                }
+            ]
+        }
+    },
+    {
+        uri: 'ssb/brawl/matchResults',
+        payload: {
+            duration: '05:34',
+            level: 'Final Destination',
+            players: [
+                {
+                    name: 'Matt',
+                    kills: 6,
+                    falls: 5,
+                    sds: 0,
+                    position: 2,
+                    character: 'Wolf',
+                    damageGiven: 662,
+                    damageTaken: 701,
+                    victim: 'Tim',
+                    bully: 'Tim',
+                    sober: true
+                },
+                {
+                    name: 'Andrew',
+                    kills: 3,
+                    falls: 3,
+                    sds: 0,
+                    position: 4,
+                    character: 'Snake',
+                    damageGiven: 823,
+                    damageTaken: 665,
+                    victim: 'Matt',
+                    bully: 'Matt',
+                    sober: false
+                },
+                {
+                    name: 'Tim',
+                    kills: 4,
+                    falls: 5,
+                    sds: 0,
+                    position: 3,
+                    character: 'Random',
+                    damageGiven: 600,
+                    damageTaken: 703,
+                    victim: 'Matt',
+                    bully: 'Matt',
+                    sober: false
+                }
+            ]
+        }
+    },
+    {
+        uri: 'ssb/brawl/matchResults',
+        payload: {
+            duration: '08:16',
+            level: 'Hyrule',
+            players: [
+                {
+                    name: 'Matt',
+                    kills: 7,
+                    falls: 3,
+                    sds: 0,
+                    position: 4,
+                    character: 'Pikachu',
+                    damageGiven: 1284,
+                    damageTaken: 494,
+                    victim: 'Tim',
+                    bully: 'Andrew',
+                    sober: true
+                },
+                {
+                    name: 'Andrew',
+                    kills: 2,
+                    falls: 5,
+                    sds: 0,
+                    position: 2,
+                    character: 'Snake',
+                    damageGiven: 617,
+                    damageTaken: 551,
+                    victim: 'Matt',
+                    bully: 'Tim',
+                    sober: false
+                },
+                {
+                    name: 'Tim',
+                    kills: 4,
+                    falls: 5,
+                    sds: 0,
+                    position: 3,
+                    character: 'Random',
+                    damageGiven: 467,
+                    damageTaken: 1323,
+                    victim: 'Andrew',
+                    bully: 'Matt',
                     sober: false
                 }
             ]
