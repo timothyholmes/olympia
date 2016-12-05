@@ -14,7 +14,7 @@
     "watch-sass": "nodemon -e scss -w lib/ui/src/style/scss -x 'npm run build-sass'",
     "watch-js": "nodemon -e js -w lib/ui/src/scripts/es6 -x 'npm run build-js'",
     "clean": "rm -r lib/ui/dist",
-    "deploy": "npm run build && npm start",
+    "deploy": "npm run build && npm run prod",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Tim Holmes",
