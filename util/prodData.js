@@ -541,4 +541,124 @@ module.exports = [
             ]
         }
     },
+<<<<<<< Updated upstream
+=======
+    {
+        uri: 'fifa/matchResults',
+        payload: {
+            players: [
+                {
+                    name: 'Tony',
+                    goalsFor: 0,
+                    goalsAgainst: 0,
+                    team: 'Chelsea',
+                    sober: false
+                },
+                {
+                    name: 'Matt',
+                    goalsFor: 0,
+                    goalsAgainst: 0,
+                    team: 'Bayern',
+                    sober: false
+                }
+            ]
+        }
+    },
+    {
+        uri: 'ssb/brawl/matchResults',
+        payload: {
+            duration: '09:26',
+            level: 'Hyrule',
+            players: [
+                {
+                    name: 'Matt',
+                    kills: 10,
+                    falls: 5,
+                    sds: 0,
+                    position: 4,
+                    character: 'Wolf',
+                    damageGiven: 992,
+                    damageTaken: 872,
+                    victim: 'Andrew',
+                    bully: 'Tim',
+                    sober: false
+                },
+                {
+                    name: 'Andrew',
+                    kills: 4,
+                    falls: 7,
+                    sds: 0,
+                    position: 2,
+                    character: 'Snake',
+                    damageGiven: 724,
+                    damageTaken: 784,
+                    victim: 'Matt',
+                    bully: 'Matt',
+                    sober: false
+                },
+                {
+                    name: 'Tim',
+                    kills: 5,
+                    falls: 7,
+                    sds: 0,
+                    position: 3,
+                    character: 'Pikachu',
+                    damageGiven: 892,
+                    damageTaken: 956,
+                    victim: 'Matt',
+                    bully: 'Matt',
+                    sober: false
+                }
+            ]
+        }
+    },
+    {
+        uri: 'ssb/brawl/matchResults',
+        payload: {
+            duration: '09:26',
+            level: 'Hyrule',
+            players: [
+                {
+                    name: 'Matt',
+                    kills: 2,
+                    falls: 7,
+                    sds: 0,
+                    position: 2,
+                    character: 'Pikachu',
+                    damageGiven: 1094,
+                    damageTaken: 1021,
+                    victim: 'Andrew',
+                    bully: 'Tim',
+                    sober: false
+                },
+                {
+                    name: 'Andrew',
+                    kills: 9,
+                    falls: 5,
+                    sds: 0,
+                    position: 4,
+                    character: 'Snake',
+                    damageGiven: 1077,
+                    damageTaken: 1301,
+                    victim: 'Tim',
+                    bully: 'Tim',
+                    sober: false
+                },
+                {
+                    name: 'Tim',
+                    kills: 8,
+                    falls: 7,
+                    sds: 0,
+                    position: 3,
+                    character: 'Lucas',
+                    damageGiven: 1313,
+                    damageTaken: 1209,
+                    victim: 'Matt',
+                    bully: 'Andrew',
+                    sober: false
+                }
+            ]
+        }
+    },
+>>>>>>> Stashed changes
 ];
