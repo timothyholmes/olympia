@@ -38,6 +38,15 @@ module.exports = [
         },
     },
     {
+        uri: 'newPlayer',
+        payload: {
+            id: 105,
+            name: 'Kimball',
+            ssbCharacterOfChoice: 'Falco',
+            fifaClubOfChoice: 'Bayern'
+        },
+    },
+    {
         uri: 'houseRecord',
         payload: {
             player: 'Andrew',
@@ -797,5 +806,74 @@ module.exports = [
                 }
             ]
         }
-    }
+    },
+    {
+        uri: 'ssb/brawl/matchResults',
+        payload: {
+            duration: '09:44',
+            level: 'Hyrule',
+            players: [
+                {
+                    name: 'Andrew',
+                    kills: 6,
+                    falls: 4,
+                    sds: 0,
+                    position: 4,
+                    character: 'Snake',
+                    damageGiven: 1386,
+                    damageTaken: 1051,
+                    victim: 'Tim',
+                    bully: 'Tim',
+                    sober: true
+                },
+                {
+                    name: 'Tim',
+                    kills: 7,
+                    falls: 5,
+                    sds: 0,
+                    position: 3,
+                    character: 'Lucas',
+                    damageGiven: 1088,
+                    damageTaken: 1302,
+                    victim: 'Andrew',
+                    bully: 'Andrew',
+                    sober: true
+                },
+                {
+                    name: 'Kimball',
+                    kills: 1,
+                    falls: 5,
+                    sds: 0,
+                    position: 2,
+                    character: 'Falco',
+                    damageGiven: 676,
+                    damageTaken: 831,
+                    victim: 'Tim',
+                    bully: 'Tim',
+                    sober: true
+                }
+            ]
+        }
+    },
+    {
+        uri: 'fifa/matchResults',
+        payload: {
+            players: [
+                {
+                    name: 'Andrew',
+                    goalsFor: 3,
+                    goalsAgainst: 2,
+                    team: 'Brazil',
+                    sober: true
+                },
+                {
+                    name: 'Kimball',
+                    goalsFor: 2,
+                    goalsAgainst: 3,
+                    team: 'France',
+                    sober: true
+                }
+            ]
+        }
+    },
 ];
