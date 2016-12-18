@@ -541,8 +541,6 @@ module.exports = [
             ]
         }
     },
-<<<<<<< Updated upstream
-=======
     {
         uri: 'fifa/matchResults',
         payload: {
@@ -660,5 +658,144 @@ module.exports = [
             ]
         }
     },
->>>>>>> Stashed changes
+    {
+        uri: 'ssb/brawl/matchResults',
+        payload: {
+            duration: '09:26',
+            level: 'Hyrule',
+            players: [
+                {
+                    name: 'Andrew',
+                    kills: 2,
+                    falls: 5,
+                    sds: 0,
+                    position: 3,
+                    character: 'Snake',
+                    damageGiven: 566,
+                    damageTaken: 914,
+                    victim: 'Tim',
+                    bully: 'Tim',
+                    sober: true
+                },
+                {
+                    name: 'Tim',
+                    kills: 5,
+                    falls: 2,
+                    sds: 0,
+                    position: 4,
+                    character: 'Lucas',
+                    damageGiven: 914,
+                    damageTaken: 595,
+                    victim: 'Andrew',
+                    bully: 'Andrew',
+                    sober: true
+                }
+            ]
+        }
+    },
+    {
+        uri: 'ssb/brawl/matchResults',
+        payload: {
+            duration: '09:26',
+            level: 'Hyrule',
+            players: [
+                {
+                    name: 'Andrew',
+                    kills: 4,
+                    falls: 5,
+                    sds: 0,
+                    position: 3,
+                    character: 'Ike',
+                    damageGiven: 565,
+                    damageTaken: 887,
+                    victim: 'Tim',
+                    bully: 'Tim',
+                    sober: true
+                },
+                {
+                    name: 'Tim',
+                    kills: 5,
+                    falls: 4,
+                    sds: 0,
+                    position: 4,
+                    character: 'Lucas',
+                    damageGiven: 887,
+                    damageTaken: 567,
+                    victim: 'Andrew',
+                    bully: 'Andrew',
+                    sober: true
+                }
+            ]
+        }
+    },
+    {
+        uri: 'ssb/brawl/matchResults',
+        payload: {
+            duration: '09:26',
+            level: 'Hyrule',
+            players: [
+                {
+                    name: 'Andrew',
+                    kills: 3,
+                    falls: 5,
+                    sds: 0,
+                    position: 3,
+                    character: 'Pikachu',
+                    damageGiven: 828,
+                    damageTaken: 746,
+                    victim: 'Tim',
+                    bully: 'Tim',
+                    sober: true
+                },
+                {
+                    name: 'Tim',
+                    kills: 5,
+                    falls: 3,
+                    sds: 0,
+                    position: 4,
+                    character: 'ROB',
+                    damageGiven: 754,
+                    damageTaken: 828,
+                    victim: 'Andrew',
+                    bully: 'Andrew',
+                    sober: true
+                }
+            ]
+        }
+    },
+    {
+        uri: 'ssb/brawl/matchResults',
+        payload: {
+            duration: '04:56',
+            level: 'Corneria',
+            players: [
+                {
+                    name: 'Andrew',
+                    kills: 5,
+                    falls: 3,
+                    sds: 0,
+                    position: 4,
+                    character: 'Snake',
+                    damageGiven: 664,
+                    damageTaken: 482,
+                    victim: 'Tim',
+                    bully: 'Tim',
+                    sober: true
+                },
+                {
+                    name: 'Tim',
+                    kills: 3,
+                    falls: 5,
+                    sds: 0,
+                    position: 3,
+                    character: 'Diddy Kong',
+                    damageGiven: 482,
+                    damageTaken: 664,
+                    victim: 'Andrew',
+                    bully: 'Andrew',
+                    sober: true
+                }
+            ]
+        }
+    }
 ];
