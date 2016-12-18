@@ -1,6 +1,6 @@
 'use strict';
 
-const PrepopData = require('./prodData'),
+const PrepopData = require('./data'),
     Bluebird = require('bluebird'),
     Wreck = Bluebird.promisifyAll(require('wreck'));
 
