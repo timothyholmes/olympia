@@ -56,6 +56,15 @@ module.exports = [
         },
     },
     {
+        uri: 'houseRecord',
+        payload: {
+            player: 'Kimball',
+            game: 'Fifa',
+            recordName: 'Quickest Goal',
+            recordValue: '02:20'
+        },
+    },
+    {
         uri: 'fifa/matchResults',
         payload: {
             players: [
