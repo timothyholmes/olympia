@@ -65,7 +65,7 @@ module.exports = [
         },
     },
     {
-        uri: 'fifa/matchResults',
+        uri: 'points/fifa/matchResults',
         payload: {
             players: [
                 {
@@ -86,7 +86,7 @@ module.exports = [
         }
     },
     {
-        uri: 'fifa/matchResults',
+        uri: 'points/fifa/matchResults',
         payload: {
             players: [
                 {
@@ -539,7 +539,7 @@ module.exports = [
         }
     },
     {
-        uri: 'fifa/matchResults',
+        uri: 'points/fifa/matchResults',
         payload: {
             players: [
                 {
@@ -560,7 +560,7 @@ module.exports = [
         }
     },
     {
-        uri: 'fifa/matchResults',
+        uri: 'points/fifa/matchResults',
         payload: {
             players: [
                 {
@@ -865,7 +865,7 @@ module.exports = [
         }
     },
     {
-        uri: 'fifa/matchResults',
+        uri: 'points/fifa/matchResults',
         payload: {
             players: [
                 {
@@ -881,6 +881,63 @@ module.exports = [
                     goalsAgainst: 3,
                     team: 'France',
                     sober: true
+                }
+            ]
+        }
+    },
+    {
+        uri: 'points/nhl/matchResults',
+        payload: {
+            players: [
+                {
+                    name: 'Tony',
+                    goalsFor: 3,
+                    goalsAgainst: 2,
+                    sober: false
+                },
+                {
+                    name: 'Andrew',
+                    goalsFor: 2,
+                    goalsAgainst: 3,
+                    sober: false
+                }
+            ]
+        }
+    },
+    {
+        uri: 'points/nhl/matchResults',
+        payload: {
+            players: [
+                {
+                    name: 'Tim',
+                    goalsFor: 2,
+                    goalsAgainst: 1,
+                    sober: false
+                },
+                {
+                    name: 'Matt',
+                    goalsFor: 1,
+                    goalsAgainst: 2,
+                    sober: true
+                }
+            ]
+        }
+    },
+    {
+        uri: 'points/nhl/matchResults',
+        payload: {
+            players: [
+                {
+                    name: 'Tim',
+                    goalsFor: 1,
+                    goalsAgainst: 11,
+                    sober: false
+                },
+                {
+                    name: 'Tony',
+                    goalsFor: 11,
+                    goalsAgainst: 1,
+                    sober: false
                 }
             ]
         }
