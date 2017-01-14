@@ -1170,4 +1170,21 @@ module.exports = [
             ]
         }
     },
+    {
+        uri: 'points/shenanigans/matchResults',
+        payload: {
+            players: [
+                {
+                    name: 'Matt',
+                    points: 0,
+                    sober: true
+                },
+                {
+                    name: 'Tim',
+                    points: 2,
+                    sober: false
+                }
+            ]
+        }
+    },
 ];
