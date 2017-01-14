@@ -79,6 +79,123 @@ module.exports = [
             ]
         }
     },
+    {
+        uri: 'v2/fifa/matchResults',
+        payload: {
+            players: [
+                {
+                    name: 'Matt',
+                    placement: 2,
+                    points: [
+                        {
+                            label: 'goalsFor',
+                            value: 1
+                        },
+                        {
+                            label: 'goalsAgainst',
+                            value: 2
+                        }
+                    ],
+                    minion: 'Chelsea',
+                    sober: true
+                },
+                {
+                    name: 'Andrew',
+                    placement: 1,
+                    points: [
+                        {
+                            label: 'goalsFor',
+                            value: 2
+                        },
+                        {
+                            label: 'goalsAgainst',
+                            value: 1
+                        }
+                    ],
+                    minion: 'Brazil',
+                    sober: true
+                }
+            ]
+        }
+    },
+    {
+        uri: 'v2/fifa/matchResults',
+        payload: {
+            players: [
+                {
+                    name: 'Matt',
+                    placement: 2,
+                    points: [
+                        {
+                            label: 'goalsFor',
+                            value: 2
+                        },
+                        {
+                            label: 'goalsAgainst',
+                            value: 3
+                        }
+                    ],
+                    minion: 'Chelsea',
+                    sober: true
+                },
+                {
+                    name: 'Tony',
+                    placement: 1,
+                    points: [
+                        {
+                            label: 'goalsFor',
+                            value: 3
+                        },
+                        {
+                            label: 'goalsAgainst',
+                            value: 2
+                        }
+                    ],
+                    minion: 'Brazil',
+                    sober: true
+                }
+            ]
+        }
+    },
+    {
+        uri: 'v2/fifa/matchResults',
+        payload: {
+            players: [
+                {
+                    name: 'Andrew',
+                    placement: 2,
+                    points: [
+                        {
+                            label: 'goalsFor',
+                            value: 1
+                        },
+                        {
+                            label: 'goalsAgainst',
+                            value: 2
+                        }
+                    ],
+                    minion: 'Brazil',
+                    sober: false
+                },
+                {
+                    name: 'Tony',
+                    placement: 1,
+                    points: [
+                        {
+                            label: 'goalsFor',
+                            value: 2
+                        },
+                        {
+                            label: 'goalsAgainst',
+                            value: 1
+                        }
+                    ],
+                    minion: 'Chelsea',
+                    sober: false
+                }
+            ]
+        }
+    },
 
 
 
