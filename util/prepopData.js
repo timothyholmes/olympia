@@ -1,10 +1,10 @@
 'use strict';
 
-const PrepopData = require('./data'),
+const PrepopData = require('./dataFiles'),
     Bluebird = require('bluebird'),
     Wreck = Bluebird.promisifyAll(require('wreck'));
 
-function loopEm (array) {
+(function loopEm (array) {
     return Bluebird.each(array, (dataEntry) => {
         console.log('dataEntry', dataEntry);
         return Wreck.postAsync(
@@ -18,6 +18,10 @@ function loopEm (array) {
             console.log('shucks');
         });
     });
-}
-
-loopEm(PrepopData);
+})(
+    [].concat(PrepopData.players)
+    .concat(PrepopData.houseRecords)
+    .concat(PrepopData.nhl)
+    .concat(PrepopData.ssb)
+    .concat(PrepopData.fifa)
+);
