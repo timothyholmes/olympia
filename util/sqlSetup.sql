@@ -24,3 +24,7 @@ CREATE TABLE olympia_dev.coliseum_stats (
     stat_object STRING
     match_count INT
 );
+
+TRUNCATE TABLE olympia_dev.coliseum_stats;
+TRUNCATE TABLE olympia_dev.matches;
+TRUNCATE TABLE olympia_dev.olympian_stats;
