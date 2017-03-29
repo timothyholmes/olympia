@@ -4,24 +4,22 @@ const PrepopData = require('./dataFiles'),
     Bluebird = require('bluebird'),
     Wreck = Bluebird.promisifyAll(require('wreck'));
 
-(function loopEm (array) {
-    return Bluebird.each(array, (dataEntry) => {
-        console.log('dataEntry', dataEntry);
+function postToAPI (olympians) {
+    return Bluebird.each(olympians, (entry) => {
+
+        console.log('Olympian', entry);
+
         return Wreck.postAsync(
-            process.env.SERVER_URL + dataEntry.uri,
-            { payload: dataEntry.payload }
+            process.env.SERVER_URL + entry.uri,
+            { payload: entry.payload }
         )
-        .then((resp) => {
-            console.log('yay');
-        })
-        .catch((err) => {
-            console.log('shucks');
+        .then((resp, payload) => {
+
+            console.log('result', payload);
+
+            return true;
         });
     });
-})(
-    [].concat(PrepopData.players)
-    .concat(PrepopData.houseRecords)
-    .concat(PrepopData.nhl)
-    .concat(PrepopData.ssb)
-    .concat(PrepopData.fifa)
-);
+}
+
+postToAPI(PrepopData.players);

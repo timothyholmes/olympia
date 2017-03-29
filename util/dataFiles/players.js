@@ -2,48 +2,31 @@
 
 module.exports = [
     {
-        uri: 'newPlayer',
+        uri: 'olympian/',
         payload: {
-            id: 100,
             name: 'Tim',
-            ssbCharacterOfChoice: 'Pikachu',
-            fifaClubOfChoice: 'Manchester United'
+            description: 'the architect'
         }
     },
     {
-        uri: 'newPlayer',
+        uri: 'olympian/',
         payload: {
-            id: 101,
-            name: 'Matt',
-            ssbCharacterOfChoice: 'Wolf',
-            fifaClubOfChoice: 'Chelsea'
-        },
-    },
-    {
-        uri: 'newPlayer',
-        payload: {
-            id: 103,
             name: 'Andrew',
-            ssbCharacterOfChoice: 'Snake',
-            fifaClubOfChoice: 'Manchester City'
-        },
+            description: 'the doctor is in, boy'
+        }
     },
     {
-        uri: 'newPlayer',
+        uri: 'olympian/',
         payload: {
-            id: 104,
             name: 'Tony',
-            ssbCharacterOfChoice: 'Kirby',
-            fifaClubOfChoice: 'Chelsea'
-        },
+            description: 'strike one'
+        }
     },
     {
-        uri: 'newPlayer',
+        uri: 'olympian/',
         payload: {
-            id: 105,
-            name: 'Kimball',
-            ssbCharacterOfChoice: 'Falco',
-            fifaClubOfChoice: 'Bayern'
-        },
+            name: 'Matt',
+            description: 'Charlie Day of Ghent'
+        }
     }
 ];

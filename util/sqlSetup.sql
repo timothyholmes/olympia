@@ -8,7 +8,7 @@ CREATE TABLE olympia_dev.olympian_stats (
     fk_olympian_id INT NOT NULL REFERENCES olympia_dev.olympians (id),
     fk_coliseum_id INT NOT NULL REFERENCES olympia_dev.coliseums (id),
     fk_gametype_id INT NOT NULL REFERENCES olympia_dev.rulebooks (id),
-    stat_object STRING
+    stat_object STRING,
     match_count INT
 );
 CREATE TABLE olympia_dev.matches (
@@ -21,7 +21,7 @@ CREATE TABLE olympia_dev.coliseum_stats (
     id SERIAL PRIMARY KEY,
     fk_coliseum_id INT NOT NULL REFERENCES olympia_dev.coliseums (id),
     fk_gametype_id INT NOT NULL REFERENCES olympia_dev.rulebooks (id),
-    stat_object STRING
+    stat_object STRING,
     match_count INT
 );
 
